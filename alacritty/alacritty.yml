@@ -1,0 +1,27 @@
+# Shell
+#
+# You can set `shell.program` to the path of your favorite shell, e.g.
+# `/bin/fish`. Entries in `shell.args` are passed unmodified as arguments to the
+# shell.
+#
+# Default:
+#   - (macOS) /bin/bash --login
+#   - (Linux/BSD) user login shell
+#   - (Windows) powershell
+shell:
+  program: ubuntu
+#  args:
+#    - --login
+selection:
+  # This string contains all characters that are used as separators for
+  # "semantic words" in Alacritty.
+  semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
+  # When set to `true`, selected text will be copied to the primary clipboard.
+  save_to_clipboard: true
+
+font:
+  normal:
+    family: "JetBrainsMono Nerd Font"
+
+import:
+  - C:\Users\Skyler\AppData\Roaming\alacritty\themes\themes\horizon-dark.yaml
