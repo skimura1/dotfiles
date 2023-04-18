@@ -134,5 +134,7 @@ source $ZSH/oh-my-zsh.sh
 alias ll="exa -l -g --icons --git"
 alias llt="exa -1 --icons --tree --git-ignore"
 
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+[ -f ~/.cargo/env ] && source $HOME/.cargo/env
