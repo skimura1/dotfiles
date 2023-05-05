@@ -1,17 +1,8 @@
-# Shell
-#
-# You can set `shell.program` to the path of your favorite shell, e.g.
-# `/bin/fish`. Entries in `shell.args` are passed unmodified as arguments to the
-# shell.
-#
-# Default:
-#   - (macOS) /bin/bash --login
-#   - (Linux/BSD) user login shell
-#   - (Windows) powershell
 shell:
-  program: ubuntu
-#  args:
-#    - --login
+  program: /bin/zsh
+  args:
+    - --login
+
 selection:
   # This string contains all characters that are used as separators for
   # "semantic words" in Alacritty.
@@ -21,7 +12,8 @@ selection:
 
 font:
   normal:
-    family: "JetBrainsMono Nerd Font"
+    family: "Hack Nerd Font"
+    size: 16
 
 import:
-  - C:\Users\Skyler\AppData\Roaming\alacritty\themes\themes\horizon-dark.yaml
+  - ~/.config/alacritty/catppuccin/catppuccin-mocha.yml
