@@ -1,4 +1,5 @@
 #!/bin/bash
 
-cp -r . ~/.config/
+cp -r tmux nvim alacritty ~/.config/
+cp ./zsh/.zshrc ~/
 git clone https://github.com/catppuccin/alacritty.git ~/.config/alacritty/catppuccin
