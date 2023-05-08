@@ -13,7 +13,7 @@ selection:
 font:
   normal:
     family: "Hack Nerd Font"
-    size: 16
+    size: 18
 
 import:
   - ~/.config/alacritty/catppuccin/catppuccin-mocha.yml
