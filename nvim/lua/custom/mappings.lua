@@ -15,7 +15,7 @@ M.dap = {
       "<cmd> DapToggleBreakpoint <CR>",
       "Toggle breakpoint",
     },
-    ["leader>dus"] = {
+    ["<leader>dus"] = {
       function()
         local widgets = require "dap.ui.widgets"
         local sidebar = widgets.sidebar(widgets.scopes)
