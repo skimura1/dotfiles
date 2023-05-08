@@ -73,5 +73,21 @@ local plugins = {
       return M
     end,
   },
+  {
+    "nvim-treesitter/nvim-treesitter",
+    opts = {
+      ensure_installed = {
+        "html",
+        "css",
+        "javascript",
+        "typescript",
+        "tsx",
+        "json",
+        "python",
+        "dockerfile",
+      },
+    },
+  },
+  {},
 }
 return plugins
