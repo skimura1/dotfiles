@@ -133,6 +133,9 @@ source $ZSH/oh-my-zsh.sh
 
 alias ll="exa -l -g --icons --git"
 alias llt="exa -1 --icons --tree --git-ignore"
+alias vi="nvim"
+alias vim="nvim"
+alias lg ="lazygit"
 
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
