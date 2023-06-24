@@ -1,21 +1,29 @@
 local plugins = {
   {
+    "windwp/nvim-ts-autotag",
+    dependencies = "nvim-treesitter/nvim-treesitter",
+    config = function()
+      require("nvim-ts-autotag").setup({})
+    end,
+    lazy = true,
+    event = "VeryLazy",
+  },
+  {
     "christoomey/vim-tmux-navigator",
     lazy = false,
   },
   {
     "neovim/nvim-lspconfig",
-
     dependencies = {
       "jose-elias-alvarez/null-ls.nvim",
       config = function()
-        require "custom.configs.null-ls"
+        require("custom.configs.null-ls")
       end,
     },
 
     config = function()
-      require "plugins.configs.lspconfig"
-      require "custom.configs.lspconfig"
+      require("plugins.configs.lspconfig")
+      require("custom.configs.lspconfig")
     end,
   },
   {
@@ -25,7 +33,7 @@ local plugins = {
         "lua-language-server",
         "html-lsp",
         "css-lsp",
-        "prettier",
+        "prettierd",
         "stylua",
         "typescript-language-server",
         "pyright",
@@ -47,7 +55,7 @@ local plugins = {
     ft = "rust",
     dependencies = "neovim/nvim-lspconfig",
     opts = function()
-      return require "custom.configs.rust-tools"
+      return require("custom.configs.rust-tools")
     end,
     config = function(_, opts)
       require("rust-tools").setup(opts)
@@ -60,7 +68,7 @@ local plugins = {
     "saecki/crates.nvim",
     ft = { "rust", "toml" },
     config = function(_, opt)
-      local crates = require "crates"
+      local crates = require("crates")
       crates.setup(opt)
       crates.show()
     end,
@@ -68,7 +76,7 @@ local plugins = {
   {
     "hrsh7th/nvim-cmp",
     opts = function()
-      local M = require "plugins.configs.cmp"
+      local M = require("plugins.configs.cmp")
       table.insert(M.sources, { name = "crates" })
       return M
     end,
@@ -88,6 +96,5 @@ local plugins = {
       },
     },
   },
-  {},
 }
 return plugins

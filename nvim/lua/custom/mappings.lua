@@ -9,6 +9,12 @@ M.general = {
   },
 }
 
+M.tree = {
+  n = {
+    ["\\"] = { "<cmd> NvimTreeToggle<CR>" },
+  },
+}
+
 M.dap = {
   n = {
     ["<leader>db"] = {
@@ -17,7 +23,7 @@ M.dap = {
     },
     ["<leader>dus"] = {
       function()
-        local widgets = require "dap.ui.widgets"
+        local widgets = require("dap.ui.widgets")
         local sidebar = widgets.sidebar(widgets.scopes)
         sidebar.open()
       end,
