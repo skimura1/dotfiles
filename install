@@ -2,4 +2,4 @@
 
 cp -r tmux nvim alacritty ~/.config/
 cp ./zsh/.zshrc ~/
-git clone https://github.com/catppuccin/alacritty.git ~/.config/alacritty/catppuccin
+# git clone https://github.com/catppuccin/alacritty.git ~/.config/alacritty/catppuccin
