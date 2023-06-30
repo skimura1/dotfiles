@@ -13,6 +13,9 @@ local sources = {
   }),
   formatting.stylua,
   lint.shellcheck,
+  diagnostics.mypy,
+  diagnostics.ruff,
+  formatting.black,
 }
 
 local augroup = vim.api.nvim_create_augroup("LspFormatting", {})

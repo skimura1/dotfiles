@@ -3,7 +3,7 @@ local plugins = {
     "windwp/nvim-ts-autotag",
     dependencies = "nvim-treesitter/nvim-treesitter",
     config = function()
-      require("nvim-ts-autotag").setup({})
+      require("custom.configs.treesitter")
     end,
     lazy = true,
     event = "VeryLazy",
@@ -36,6 +36,10 @@ local plugins = {
         "prettierd",
         "stylua",
         "typescript-language-server",
+        "black",
+        "debugpy",
+        "mypy",
+        "ruff",
         "pyright",
         "tailwindcss-language-server",
         "ansible-language-server",
@@ -62,7 +66,38 @@ local plugins = {
     end,
   },
   {
+    "rcarriga/nvim-dap-ui",
+    dependencies = "mfussenegger/nvim-dap",
+    config = function()
+      local dap = require("dap")
+      local dapui = require("dapui")
+      dapui.setup()
+      dap.listeners.after.event_initialized["dapui_config"] = function()
+        dapui.open()
+      end
+      dap.listeners.before.envent_terminated["dapui_config"] = function()
+        dapui.close()
+      end
+      dap.listeners.before.event_exited["dapui_config"] = function()
+        dapui.close()
+      end
+    end,
+  },
+  {
     "mfussenegger/nvim-dap",
+  },
+  {
+    "mfussenegger/nvim-dap-python",
+    ft = "python",
+    dependencies = {
+      "mfussenegger/nvim-dap",
+      "rcarriga/nvim-dap-ui",
+    },
+    config = function()
+      local path = "~/.local/share/nvim/mason/packages/debugpy/venv/bin/python"
+      require("dap-python").setup(path)
+      require("core.utils").load_mappings("dap_python")
+    end,
   },
   {
     "saecki/crates.nvim",
@@ -82,19 +117,12 @@ local plugins = {
     end,
   },
   {
-    "nvim-treesitter/nvim-treesitter",
-    opts = {
-      ensure_installed = {
-        "html",
-        "css",
-        "javascript",
-        "typescript",
-        "tsx",
-        "json",
-        "python",
-        "dockerfile",
-      },
-    },
+    "stevearc/oil.nvim",
+    opts = {},
+    dependencies = { "nvim-tree/nvim-web-devicons" },
+    config = function()
+      require("oil").setup()
+    end,
   },
 }
 return plugins

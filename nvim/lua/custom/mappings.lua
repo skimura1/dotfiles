@@ -9,6 +9,23 @@ M.general = {
   },
 }
 
+M.oil = {
+  n = {
+    ["-"] = {
+      function()
+        require("oil").open()
+      end,
+      "Open parent directory",
+    },
+  },
+}
+
+for i = 1, 9, 1 do
+  vim.keymap.set("n", string.format("<A-%s>", i), function()
+    vim.api.nvim_set_current_buf(vim.t.bufs[i])
+  end)
+end
+
 M.tree = {
   n = {
     ["\\"] = { "<cmd> NvimTreeToggle<CR>" },
@@ -28,6 +45,17 @@ M.dap = {
         sidebar.open()
       end,
       "Open debugging sidebar",
+    },
+  },
+}
+
+M.dap_python = {
+  plugin = true,
+  n = {
+    ["<leader>dpr"] = {
+      function()
+        require("dap-python").test_method()
+      end,
     },
   },
 }
