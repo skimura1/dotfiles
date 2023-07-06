@@ -135,7 +135,6 @@ alias ll="exa -l -g --icons --git"
 alias llt="exa -1 --icons --tree --git-ignore"
 alias vi="nvim"
 alias vim="nvim"
-alias lg ="lazygit"
 alias spotify="flatpak run com.spotify.Client"
 alias discord="flatpak run com.discordapp.Discord"
 alias slack="flatpak run com.slack.Slack"
@@ -147,8 +146,8 @@ alias slack="flatpak run com.slack.Slack"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-export PYENV_ROOT="$HOME/.pyenv"
-command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
+# export PYENV_ROOT="$HOME/.pyenv"
+# command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+# eval "$(pyenv init -)"
 
 export PATH=$PATH:/home/skyler/.spicetify
