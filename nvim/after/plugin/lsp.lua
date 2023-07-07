@@ -2,8 +2,6 @@ local lsp = require('lsp-zero').preset({})
 
 lsp.ensure_installed({
   'tsserver',
-  'eslintd',
-  'prettierd',
   'tailwindcss',
   'lua_ls',
   'pyright'
