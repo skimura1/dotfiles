@@ -1,0 +1,91 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+  {
+    "command": "workbench.action.toggleSidebarVisibility",
+    "key": "ctrl+e"
+  },
+  {
+    "command": "workbench.files.action.focusFilesExplorer",
+    "key": "ctrl+e",
+    "when": "editorTextFocus"
+  },
+  {
+    "command": "explorer.newFile",
+    "key": "a",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "command": "renameFile",
+    "key": "r",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "command": "cutfile",
+    "key": "x",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "command": "deleteFile",
+    "key": "d",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "command": "selectNextSuggestion",
+    "key": "ctrl+f",
+    "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
+  },
+  {
+    "command": "selectPrevSuggestion",
+    "key": "ctrl+d",
+    "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
+  },
+  {
+    "command": "selectNextQuickFix",
+    "key": "ctrl+f",
+    "when": "editorFocus && quickFixWidgetVisible"
+  },
+  {
+    "command": "selectPrevQuickFix",
+    "key": "ctrl+d",
+    "when": "editorFocus && quickFixWidgetVisible"
+  },
+  {
+    "command": "workbench.action.quickOpenNavigateNextInFilePicker",
+    "key": "ctrl+j",
+    "when": "inFilesPicker && inQuickOpen"
+  },
+  {
+    "command": "-workbench.action.quickOpenNavigateNextInFilePicker",
+    "key": "ctrl+p",
+    "when": "inFilesPicker && inQuickOpen"
+  },
+  {
+    "command": "workbench.action.quickOpenNavigatePreviousInFilePicker",
+    "key": "ctrl+k",
+    "when": "inFilesPicker && inQuickOpen"
+  },
+  {
+    "command": "-workbench.action.quickOpenNavigatePreviousInFilePicker",
+    "key": "ctrl+shift+p",
+    "when": "inFilesPicker && inQuickOpen"
+  },
+  {
+    "command": "tailwind-fold.toggleAutoFold",
+    "key": "ctrl+t"
+  },
+  {
+    "key": "ctrl+e",
+    "command": "-extension.vim_ctrl+e",
+    "when": "editorTextFocus && vim.active && vim.use<C-e> && !inDebugRepl"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "-extension.vim_ctrl+p",
+    "when": "editorTextFocus && vim.active && vim.use<C-p> && !inDebugRepl || vim.active && vim.use<C-p> && !inDebugRepl && vim.mode == 'CommandlineInProgress' || vim.active && vim.use<C-p> && !inDebugRepl && vim.mode == 'SearchInProgressMode'"
+  },
+  {
+    "key": "ctrl+w",
+    "command": "-extension.vim_ctrl+w",
+    "when": "editorTextFocus && vim.active && vim.use<C-w> && !inDebugRepl"
+  },
+]

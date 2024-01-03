@@ -1,0 +1,184 @@
+{
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[markdown]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescriptreact]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.accessibilitySupport": "off",
+    "editor.codeActionsOnSave": {
+      "source.addMissingImports": "explicit",
+      "source.organizeImports": "explicit"
+    },
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.cursorSurroundingLines": 5,
+    "editor.fontFamily": "'Monaspace Argon', monospace",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 16,
+    "editor.formatOnSave": false,
+    "editor.inlineSuggest.enabled": true,
+    "editor.lineHeight": 28,
+    "editor.linkedEditing": true,
+    "editor.minimap.enabled": false,
+    "editor.quickSuggestions": {
+      "comments": "off",
+      "other": "on",
+      "strings": "on"
+    },
+    "editor.renderWhitespace": "selection",
+    "editor.scrollbar.horizontal": "hidden",
+    "editor.smoothScrolling": true,
+    "editor.stickyScroll.enabled": true,
+    "editor.suggest.insertMode": "replace",
+    "editor.suggestSelection": "first",
+    "errorLens.enabled": true,
+    "errorLens.enabledDiagnosticLevels": [
+      "error",
+      "warning",
+      "info",
+      "hint"
+    ],
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "extensions.autoUpdate": "onlyEnabledExtensions",
+    "extensions.ignoreRecommendations": true,
+    "files.autoSave": "onWindowChange",
+    "files.exclude": {
+      "**/.classpath": true,
+      "**/.factorypath": true,
+      "**/.project": true,
+      "**/.settings": true
+    },
+    "sortJSON.orderOverride": [
+      "name",
+      "version",
+      "main",
+      "module",
+      "types",
+      "typings",
+      "files",
+      "publishConfig",
+      "repository",
+      "scripts",
+      "prefix",
+      "description",
+      "body"
+    ],
+    "sortJSON.orderUnderride": [
+      "resolutions",
+      "dependencies",
+      "devDependencies",
+      "peerDependencies",
+      "cSpell.userWords"
+    ],
+    "tailwindCSS.includeLanguages": {
+      "css": "css",
+      "html": "html",
+      "javascript": "javascript",
+      "typescriptreact": "typescriptreact"
+    },
+    "typescript.preferences.importModuleSpecifier": "non-relative",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "vim.cursorStylePerMode.insert": "line",
+    "vim.cursorStylePerMode.normal": "block",
+    "vim.cursorStylePerMode.replace": "line",
+    "vim.cursorStylePerMode.visual": "underline",
+    "vim.cursorStylePerMode.visualblock": "underline",
+    "vim.cursorStylePerMode.visualline": "underline",
+    "vim.foldfix": true,
+    "vim.highlightedyank.color": "rgba(255, 192, 203, 0.5)",
+    "vim.highlightedyank.enable": true,
+    "vim.highlightedyank.textColor": "white",
+    "vim.hlsearch": true,
+    "vim.leader": "<space>",
+    "vim.normalModeKeyBindings": [
+      {
+        "before": [
+          "<c-]>"
+        ],
+        "commands": [
+          "editor.action.marker.next"
+        ]
+      },
+      {
+        "before": [
+          "<c-[>"
+        ],
+        "commands": [
+          "editor.action.marker.prev"
+        ]
+      },
+      {
+        "after": [
+          "g",
+          "g",
+          "V",
+          "G"
+        ],
+        "before": [
+          "<c-a>"
+        ]
+      },
+      {
+        "before": [
+          "K"
+        ],
+        "commands": [
+          "editor.action.showHover"
+        ]
+      },
+      {
+        "before": [
+          "<leader>",
+          "c",
+          "a"
+        ],
+        "commands": [
+          "editor.action.quickFix"
+        ]
+      },
+      {
+        "before": [
+          "leader",
+          "q"
+        ],
+        "commands": [
+          "editor.action.quickFix"
+        ]
+      },
+      {
+        "before": [
+          "leader",
+          "x"
+        ],
+        "commands": [
+          "workbench.action.closeActiveEditor"
+        ]
+      },
+      {
+        "before": [
+          "leader",
+          "f"
+        ],
+        "commands": [
+          "workbench.action.quickOpen"
+        ]
+      },
+    ],
+    "vim.useSystemClipboard": true,
+    "window.titleBarStyle": "custom",
+    "window.zoomLevel": -1,
+    "workbench.colorTheme": "Dracula",
+    "workbench.editor.showTabs": "none",
+    "workbench.iconTheme": "catppuccin-mocha",
+    "workbench.startupEditor": "readme",
+    "remote.autoForwardPortsSource": "hybrid",
+    "window.commandCenter": false,
+    "workbench.activityBar.location": "hidden"
+  }

@@ -1,6 +1,0 @@
-#!/bin/bash
- 
-cp ~/.config/alacritty/alacritty.yml ./alacritty/
-cp -r ~/.config/nvim/* ./nvim/
-cp ~/.config/tmux/tmux.conf ./tmux/
-cp ~/.zshrc ./zsh/

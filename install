@@ -1,9 +1,0 @@
-#!/bin/bash
-
-rm -rf ~/.config/tmux ~/.config/nvim ~/.config/alacritty
-rm -rf ~/.local/share/nvim
-
-cp -r tmux nvim alacritty ~/.config/
-cp ./zsh/.zshrc ~/
-git clone --depth 1 https://github.com/wbthomason/packer.nvim\ ~/.local/share/nvim/site/pack/packer/start/packer.nvim
-git clone https://github.com/catppuccin/alacritty.git ~/.config/alacritty/catppuccin
