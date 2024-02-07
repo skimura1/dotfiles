@@ -1,6 +1,6 @@
 # .dotfiles
 ## What I use:
-- Alacritty
+- Wezterm
 - Tmux
 - Fish
 - VSCode
