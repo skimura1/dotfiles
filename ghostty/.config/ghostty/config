@@ -1,5 +1,5 @@
-font-family = "Monaspice Ar NF"
-font-size=18
+font-family = "Iosevka Term"
+font-size=20
 theme = catppuccin-mocha
 mouse-hide-while-typing = true
 scrollback-limit = 1000000
