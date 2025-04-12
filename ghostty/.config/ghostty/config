@@ -1,25 +1,8 @@
-shell-integration = fish
-font-family = JetBrains Mono
+font-family = "Monaspice Ar NF"
+font-size=18
 theme = catppuccin-mocha
 mouse-hide-while-typing = true
 scrollback-limit = 1000000
-
-keybind = ctrl+n=new_window
-
-keybind = ctrl+h=goto_split:left
-keybind = ctrl+j=goto_split:bottom
-keybind = ctrl+k=goto_split:top
-keybind = ctrl+l=goto_split:right
-
-keybind = ctrl+b>h=new_split:left
-keybind = ctrl+b>j=new_split:down
-keybind = ctrl+b>k=ew_split:up
-keybind = ctrl+b>l=new_split:right
-keybind = ctrl+b>f=toggle_split_zoom
-
-keybind = ctrl+b>t=new_tab
-keybind = ctrl+b>n=next_tab
-keybind = ctrl+b>p=previous_tab
 
 keybind = super+r=reload_config
 
