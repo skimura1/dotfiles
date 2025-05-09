@@ -3,7 +3,6 @@ font-size=20
 theme = Kanagawa Dragon
 mouse-hide-while-typing = true
 scrollback-limit = 1000000
-
 keybind = super+r=reload_config
 
 window-save-state = always
