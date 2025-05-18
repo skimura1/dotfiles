@@ -25,11 +25,6 @@ alias todo="nvim ~/Documents/notes/todo.md"
 starship init fish | source
 zoxide init fish | source
 
-if status is-interactive
-and not set -q TMUX
-    exec tmux
-end
-
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 if test -f /home/skyler/miniconda3/bin/conda
