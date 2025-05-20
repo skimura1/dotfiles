@@ -4,5 +4,7 @@ theme = Kanagawa Dragon
 mouse-hide-while-typing = true
 scrollback-limit = 1000000
 keybind = super+r=reload_config
+background-opacity = 0.9
+background-blur-radius = 20
 
 window-save-state = always
