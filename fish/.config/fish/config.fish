@@ -9,7 +9,8 @@ set -gx EDITOR nvim
 set -gx PATH bin $PATH
 set -gx PATH ~/bin $PATH
 set -gx PATH ~/.local/bin $PATH
-# set -gx PATH ~/miniconda3/bin $PATH  # commented out by conda initialize
+set -gx PATH ~/.local/opt/go/bin $PATH
+set -gx PATH ~/.asdf/installs/nodejs/lts/bin $PATH
 
 if status is-interactive
     # Commands to run in interactive sessions can go here
@@ -25,18 +26,6 @@ alias todo="nvim ~/Documents/notes/todo.md"
 starship init fish | source
 zoxide init fish | source
 
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-if test -f /home/skyler/miniconda3/bin/conda
-    eval /home/skyler/miniconda3/bin/conda "shell.fish" "hook" $argv | source
-else
-    if test -f "/home/skyler/miniconda3/etc/fish/conf.d/conda.fish"
-        . "/home/skyler/miniconda3/etc/fish/conf.d/conda.fish"
-    else
-        set -x PATH "/home/skyler/miniconda3/bin" $PATH
-    end
-end
-# <<< conda initialize <<<
 # ASDF configuration code
 if test -z $ASDF_DATA_DIR
 	set _asdf_shims "$HOME/.asdf/shims"
@@ -60,3 +49,10 @@ function y
 end
 
 fish_add_path /Users/skyler/.spicetify
+
+# Generated for envman. Do not edit.
+test -s ~/.config/envman/load.fish; and source ~/.config/envman/load.fish
+
+# Added by OrbStack: command-line tools and integration
+# This won't be added again if you remove it.
+source ~/.orbstack/shell/init2.fish 2>/dev/null || :
