@@ -1,16 +1,11 @@
-set fish_greeting ""
-
 # theme
 set -g theme_color_scheme terminal-dark
 
 set -gx TERM xterm-256color
 set -gx EDITOR nvim
 
-set -gx PATH bin $PATH
-set -gx PATH ~/bin $PATH
 set -gx PATH ~/.local/bin $PATH
 set -gx PATH ~/.local/opt/go/bin $PATH
-set -gx PATH ~/.asdf/installs/nodejs/lts/bin $PATH
 
 if status is-interactive
     # Commands to run in interactive sessions can go here
@@ -18,11 +13,8 @@ end
 
 alias fishrc="nvim ~/.config/fish/config.fish"
 alias reload="source ~/.config/fish/config.fish"
-alias ll="exa -l -g"
-alias llt="exa -1 --tree"
 alias vi="nvim"
 alias py="python3"
-alias todo="nvim ~/Documents/notes/todo.md"
 starship init fish | source
 zoxide init fish | source
 
@@ -48,11 +40,18 @@ function y
 	rm -f -- "$tmp"
 end
 
-fish_add_path /Users/skyler/.spicetify
-
-# Generated for envman. Do not edit.
-test -s ~/.config/envman/load.fish; and source ~/.config/envman/load.fish
+fish_add_path ~/.spicetify
 
 # Added by OrbStack: command-line tools and integration
 # This won't be added again if you remove it.
 source ~/.orbstack/shell/init2.fish 2>/dev/null || :
+
+# opencode
+fish_add_path ~/.opencode/bin
+
+# Homebrew (Apple Silicon or Intel, whichever is present)
+if test -x /opt/homebrew/bin/brew
+	/opt/homebrew/bin/brew shellenv | source
+else if test -x /usr/local/bin/brew
+	/usr/local/bin/brew shellenv | source
+end
